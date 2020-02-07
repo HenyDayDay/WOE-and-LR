@@ -23,5 +23,4 @@ The purpose of this repository is to create a pipeline of python codes including
 
 5. Scorecard: user-defined parameters: Factor, pdo (Points to double the odds), offset
 
-6. Evaluation: KS and AUC, Correlation, P value and VIF (Variance inflation factors)
-   It's not model validation. It's old-school statistics but your boss will like them
+6. Evaluation: KS and AUC, Correlation, P value and VIF (Variance inflation factors) It's old-school statistics but your boss will like them
