@@ -13,14 +13,15 @@ The purpose of this repository is to create a pipeline of python codes including
 1. Data Preprocessing includes a variety of statistical analysis, e.g. Univariate analysis, Bi-variate analysis, distribution 
 
 2. Feature Selection: LightGBM, Xgboost, CatBoost. We 
-    We only recommend CatBoost when there are many categorical variables since it takes long time to run on CPU. The author claimed it run much faster on GPU but I never have chance to validate it. 
+    We only recommend CatBoost when there are many categorical variables since it takes long time to run on CPU. The author claimed it run much faster on GPU but I never have chance to validate it. Hyperparameter: Bayesian Optimization
 
 3. Feature Engineering: OneHotEncoder, missing value imputation, Weight of Evidence, Special value
     special value cause significant shift in logistic regression. e.g. Experian used the larget number as special value, like 96, 97, 98,99 or 996,997,998, 999. However, the special value usually represents no trades or no activities which is similar to 0.  
     missing value: we have seen performance of missing values change over years since these bureaus can collect more data for users. 
     
 4. Modeling: Logistic Regression with regularization (e.g. L1 and L2)
+   Stepwise LR with Backward Sequential Feature Selection
 
 5. Scorecard: user-defined parameters: Factor, pdo (Points to double the odds), offset
 
-6. Evaluation: KS and AUC, Correlation, P value and VIF (Variance inflation factors) It's old-school statistics but your boss will like them
+6. Evaluation: KS and AUC, Correlation, P value and VIF (Variance inflation factors) It's old-school and boring statistics but your boss will like them
