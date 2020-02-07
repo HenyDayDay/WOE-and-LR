@@ -1,14 +1,13 @@
 # WOE-and-LR
 Traditional Credit Scoring/Underwriting Model with Weight of Evidence (WOE), Logistic Regression(LR), CatBoost, Xgboost, and LightGBM-based feature selection. 
 
-Background
 In the big data era, one of the major challenging is to deal with massive features. In subprime financial market, thousand of variables are collected from credit bureau like TransUnion, Experian, Equifax, and etc. The raw datasets usually contain 1000 variables to 7000 variables. 
 
 Traditional credit scoring using information value to select variables, it can be improved through introducing machine learning based feature selection methods. Our proposed method has been validated in the real credit data like personal loan and auto loan. It boosts the KS performance 30% on average compared to information-value based feature selection. 
 
 Due to the strictly requirement if regulation and interpretability, we only use gradient boost tree in feature selection, we believe the excellent feature engineering can achieve similar performance with gradient boost tree by using logistic regression. 
 
-The purpose of this repository is to create a pipeline of data preprocessing, feature selection, feature engineering, modeling, scorecard and evaluation. 
+The purpose of this repository is to create a pipeline of python codes including data preprocessing, feature selection, feature engineering, modeling, scorecard and evaluation. 
 
 
 1. Data Preprocessing includes a variety of statistical analysis, e.g. Univariate analysis, Bi-variate analysis, distribution 
